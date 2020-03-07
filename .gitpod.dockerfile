@@ -1,4 +1,4 @@
-FROM apache/zeppelin
+FROM apache/zeppelin:0.8.2
 #gitpod/workspace-mysql
 
 
