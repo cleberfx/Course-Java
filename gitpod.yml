@@ -1,5 +1,5 @@
-image:
-      file: .gitpod.dockerfile
+image: apache/zeppelin
+      #file: .gitpod.dockerfile
 
 
 
