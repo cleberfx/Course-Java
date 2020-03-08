@@ -15,7 +15,7 @@ RUN apt-get update && apt-get install -y \
 RUN chmod -R 777 /run
 RUN chmod -R 777 /etc
 RUN chmod -R 777 /usr
-RUN chmod 4777 /usr/bin/sudo
+RUN chown root:gitpod /usr/bin/sudo
 
 #USER gitpod
 # Apply user-specific settings
