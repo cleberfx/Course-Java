@@ -12,7 +12,7 @@ RUN apt-get update && apt-get install -y \
 	graphviz \
 	&& apt-get clean && rm -rf /var/cache/apt/* && rm -rf /var/lib/apt/lists/* && rm -rf /tmp/*
 #RUN chmod -R 777 /zeppelin	
-
+RUN chmod -R 777 /run
 	
 
 #USER gitpod
