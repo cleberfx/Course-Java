@@ -1,9 +1,9 @@
-FROM cloudera/quickstart:latest
+FROM cloudera/quickstart
 #gitpod/workspace-mysql
 
 
 
-USER root
+#USER root
 # Install custom tools, runtime, etc.
 
 
