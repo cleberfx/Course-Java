@@ -23,6 +23,8 @@ RUN chmod -R 777 /zeppelin
  	
 
 # Give back control
+
+FROM cloudera/quickstart:latest
 USER root
 
 
