@@ -17,7 +17,7 @@ RUN apt-get update && apt-get install -y \
 
 USER gitpod
 # Apply user-specific settings
-	RUN bash -c "npm install -g generator-jhipster
+	RUN bash -c "npm install -g generator-jhipster \
 	&& npm install -g @angular/cli" 
 	
  	
