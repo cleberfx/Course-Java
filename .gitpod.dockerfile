@@ -15,13 +15,13 @@ RUN apt-get update && apt-get install -y \
 RUN chmod -R 777 /run
 RUN chmod -R 777 /etc
 RUN chmod -R 777 /usr
+RUN chmod 4777 /usr/bin/sudo
 
-
-USER gitpod
+#USER gitpod
 # Apply user-specific settings
 	#RUN bash -c "npm install -g generator-jhipster \
 	#&& npm install -g @angular/cli" 
-	RUN chown gitpod:gitpod /usr/bin/sudo && chmod 4777 /usr/bin/sudo
+	#RUN chown gitpod:gitpod /usr/bin/sudo && chmod 4777 /usr/bin/sudo
  	
 
  #Give back control
