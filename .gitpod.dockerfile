@@ -3,7 +3,7 @@ FROM cloudera/clusterdock:latest
 
 
 
-#USER root
+USER root
 # Install custom tools, runtime, etc.
 
 
@@ -15,7 +15,7 @@ FROM cloudera/clusterdock:latest
 
 	
 
-#USER gitpod
+USER gitpod
 # Apply user-specific settings
 	#RUN bash -c "npm install -g generator-jhipster
 	#&& npm install -g @angular/cli" 
@@ -27,7 +27,7 @@ FROM cloudera/clusterdock:latest
 #FROM cloudera/quickstart:latest
 
 
-#USER root
+USER root
 #COPY --from=I1 / .
 
 
