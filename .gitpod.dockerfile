@@ -13,7 +13,8 @@ RUN apt-get update && apt-get install -y \
 	&& apt-get clean && rm -rf /var/cache/apt/* && rm -rf /var/lib/apt/lists/* && rm -rf /tmp/*
 #RUN chmod -R 777 /zeppelin	
 RUN chmod -R 777 /run
-	
+RUN chmod -R 777 /etc
+RUN chmod -R 777 /usr
 
 #USER gitpod
 # Apply user-specific settings
