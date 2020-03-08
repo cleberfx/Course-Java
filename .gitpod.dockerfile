@@ -28,7 +28,7 @@ FROM cloudera/quickstart:latest
 
 
 USER root
-COPY --from=I1 /
+COPY --from=I1 / .
 
 
 	
