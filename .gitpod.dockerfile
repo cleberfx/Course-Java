@@ -1,4 +1,4 @@
-FROM apache/zeppelin:0.8.2
+FROM apache/zeppelin:0.8.2 AS I1
 #gitpod/workspace-mysql
 
 
@@ -25,8 +25,10 @@ RUN chmod -R 777 /zeppelin
 # Give back control
 
 FROM cloudera/quickstart:latest
-USER root
 
+
+USER root
+COPY --from=I1 /
 
 
 	
