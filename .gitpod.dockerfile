@@ -1,4 +1,4 @@
-FROM cloudera/quickstart
+FROM cloudera/clusterdock:latest
 #gitpod/workspace-mysql
 
 
