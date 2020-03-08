@@ -1,4 +1,4 @@
-FROM cloudera/clusterdock:latest
+FROM sequenceiq/hadoop-ubuntu:2.5.2
 #gitpod/workspace-mysql
 
 
