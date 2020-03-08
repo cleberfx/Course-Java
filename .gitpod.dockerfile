@@ -1,4 +1,4 @@
-FROM sequenceiq/hadoop-ubuntu:2.5.2
+FROM marcelmittelstaedt/hadoop_base:latest
 #gitpod/workspace-mysql
 
 
