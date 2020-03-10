@@ -17,6 +17,18 @@ RUN apt-get update && apt-get install -y \
 RUN chmod -R 777 /usr/local
 #RUN chown gitpd:root /usr/bin/sudo
 
+ENV HADOOP_HOME /usr/local/hadoop
+#ENV HDFS_NAMENODE_USER root
+#ENV HDFS_DATANODE_USER root
+#ENV HDFS_SECONDARYNAMENODE_USER root
+#ENV YARN_RESOURCEMANAGER_USER root
+#ENV YARN_NODEMANAGER_USER root
+ENV HADOOP_COMMON_HOME $HADOOP_HOME
+ENV HADOOP_HDFS_HOME $HADOOP_HOME
+ENV HADOOP_MAPRED_HOME $HADOOP_HOME
+ENV HADOOP_YARN_HOME $HADOOP_HOME
+ENV HADOOP_CONF_DIR /usr/local/hadoop/etc/hadoop
+
 USER gitpod
 # Apply user-specific settings
 	#RUN bash -c "npm install -g generator-jhipster \
