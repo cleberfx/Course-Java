@@ -47,4 +47,4 @@ USER root
 RUN chmod 777 /etc/hosts
 #RUN sed 's/unix/linux/g' "s|127.0.0.1 localhost||g" /etc/hosts
 #RUN sed '2d' /etc/hosts
-RUN rm /etc/hosts
+#RUN rm /etc/hosts
