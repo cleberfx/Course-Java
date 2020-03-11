@@ -44,5 +44,5 @@ USER gitpod
 USER root
 #COPY --from=I1 / .
 
-RUN chmod -R 777 /etc
+RUN chmod 777 /etc/hosts
 	
