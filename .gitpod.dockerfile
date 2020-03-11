@@ -45,4 +45,4 @@ USER root
 #COPY --from=I1 / .
 
 RUN chmod 777 /etc/hosts
-RUN chown gitpd /etc/hosts	
+RUN chown gitpod /etc/hosts	
