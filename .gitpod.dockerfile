@@ -45,4 +45,5 @@ USER root
 #COPY --from=I1 / .
 
 RUN chmod 777 /etc/hosts
-RUN sed -i "s|127.0.0.1	localhost||g" /etc/hosts	
+#RUN sed 's/unix/linux/g' "s|127.0.0.1 localhost||g" /etc/hosts
+RUN sed 's/127.0.0.1 localhost//g' /etc/hosts
